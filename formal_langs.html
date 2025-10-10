@@ -1,103 +1,126 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> نظریه زبان ها و ماشین ها - پاییز ۱۴۰۴</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(160deg, #cce7ff, #d0f0f7);
-            color: #004d40;
-        }
-
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 1.5rem;
-            background: linear-gradient(to right, #66bb6a, #26a69a);
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-            position: relative;
-        }
-
-        header img {
-            position: absolute;
-            left: 1.5rem;
-            height: 100px;
-            width: auto;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2rem;
-            color: #e8f5e9;
-        }
-
-        main {
-            display: flex;
-            justify-content: center;
-            margin: 3rem 1rem;
-        }
-
-        .assignment-container {
-            width: 100%;
-            max-width: 600px;
-        }
-
-        .assignment-container h2 {
-            text-align: center;
-            margin-bottom: 2rem;
-            color: #004d40;
-        }
-
-        .assignment-list {
-            list-style: none;
-            padding: 0;
-            font-size: 1.2rem;
-        }
-
-        .assignment-list li {
-            margin: 1rem 0;
-        }
-
-        .assignment-list a {
-            text-decoration: none;
-            color: #00796b;
-            transition: 0.3s;
-        }
-
-        .assignment-list a:hover {
-            color: #26a69a;
-            text-decoration: underline;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1.5rem;
-            font-size: 0.9rem;
-            color: #004d40;
-            border-top: 1px solid #66bb6a;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>نظریه زبان ها و ماشین ها</title>
+  <meta name="description" content="شرح درس، اهداف، برنامه، ارزیابی و اطلاعات مدرس." />
+  <style>
+    :root{
+      --bg:#fafafa; --panel:#ffffff; --text:#1f2937; --muted:#6b7280; --accent:#2563eb; --border:#e5e7eb;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; font-family:Tahoma, Vazirmatn, system-ui; color:var(--text); background:var(--bg); line-height:1.8}
+    .container{max-width:900px; margin:40px auto; padding:0 16px}
+    header{background:linear-gradient(180deg,#f5f7ff,transparent); padding:24px 0; text-align:right}
+    h1{margin:0 0 6px; font-size:clamp(1.6rem,2.5vw,2.2rem)}
+    .subtitle{color:var(--muted); margin:0 0 8px}
+    .meta{display:flex; gap:10px; flex-wrap:wrap; font-size:.95rem; color:var(--muted)}
+    .badge{display:inline-block; padding:2px 8px; border:1px solid var(--border); border-radius:999px; background:var(--panel)}
+    section{background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:18px 16px; margin:16px 0; text-align:right}
+    section h2{margin:0 0 10px; font-size:1.15rem}
+    ul{margin:8px 0 0 18px}
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .grid{display:grid; gap:16px}
+    @media (min-width:800px){ .grid-2{grid-template-columns:1fr 1fr} }
+    footer{color:var(--muted); font-size:.9rem; padding:16px 0 40px; text-align:right}
+    .table{width:100%; border-collapse:collapse}
+    .table th,.table td{border:1px solid var(--border); padding:10px; text-align:right}
+    .table th{background:#f9fafb}
+  </style>
 </head>
 <body>
+  <div class="container">
     <header>
-        <img src="logo_birjand.png" alt="لوگوی دانشگاه">
-        <h1>نظریه زبان ها و ماشین ها - پاییز ۱۴۰۴ </h1>
+      <h1>نظریه زبان ها و ماشین ها</h1>
+      <p class="subtitle">نیم‌سال: پاییز ۱۴۰۴ · واحد: ۳ · مقطع: کارشناسی</p>
+      <div class="meta">
+        <span class="badge">مدرس: پارسا باقرزاده</span>
+        <span class="badge">ایمیل: parsa [dot] bagherazadeh [at] gmail [dot] com</span>
+      </div>
     </header>
-    <main>
-        <div class="assignment-container">
-            <ul class="assignment-list">
-                <li><a href="a1.pdf" target="_blank">تمرین ۱</a></li>
-            </ul>
-        </div>
-    </main>
+
+    <section aria-labelledby="overview">
+      <h2 id="overview">معرفی</h2>
+      <p>
+این درس یکی از دروس نظری بنیادی در علوم رایانه است که مفاهیم پایه‌ای در مورد زبان‌های صوری، گرامرها، اتوماتا و قابلیت محاسبه را بررسی می‌کند. هدف اصلی درس، آشنایی دانشجو با مدل‌های مختلف محاسبه و تحلیل قدرت آن‌ها برای توصیف زبان‌های مختلف است.
+      </p>
+    </section>
+
+    <div class="grid grid-2">
+      <section aria-labelledby="outcomes">
+        <h2 id="outcomes">اهداف یادگیری</h2>
+        <ul>
+          <li>دانشجویان قادر خواهند بود مفاهیم زبان‌ها، الفبا، رشته‌ها و قواعد تولید زبان‌ها را تعریف و توضیح دهند.</li>
+          <li>دانشجویان می‌توانند ماشین‌های قطعی و غیرقطعی را طراحی، تحلیل و رسم کنند و رفتار آن‌ها را برای رشته‌های مختلف پیش‌بینی کنند.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="prereqs">
+        <h2 id="prereqs">پیش‌نیازها</h2>
+        <ul>
+          <li>ساختمان داده ها</li>
+        </ul>
+      </section>
+    </div>
+
+    <section aria-labelledby="schedule">
+      <h2 id="schedule">برنامه هفتگی (موقت)</h2>
+      <table class="table" role="table">
+        <thead>
+          <tr><th>هفته</th><th>موضوع</th><th>منابع/یادداشت‌ها</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>۱</td><td>مقدمه؛ مقررات درس</td><td>-</td></tr>
+          <tr><td>۲</td><td>ماشین حالت متناهی قطعی</td><td>-</td></tr>
+          <tr><td>۳</td><td>ماشین خالت متنهای غیر قطعی</td><td>-</td></tr>
+          <tr><td>۴</td><td>تبدیل ماشین قطعی به غیر قطعی</td><td>-</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+
+    <section aria-labelledby="assignments">
+      <h2 id="assignments">تمرین‌ها و تکالیف</h2>
+      <ul>
+        <li><a href="a1.pdf" download>تمرین ۱ (PDF)</a></li>
+      </ul>
+    </section>
+    
+
+    <div class="grid grid-2">
+      <section aria-labelledby="assessment">
+        <h2 id="assessment">ارزیابی</h2>
+        <ul>
+          <li>تمرین‌ها : ۱۵٪</li>
+          <li>امتحان میان ترم (در تاریخ ۱ آذر ۱۴۰۴): ۴۰٪</li>
+          <li>امتحان پایانی: ۴۵٪</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="policies">
+        <h2 id="policies">قوانین</h2>
+        <ul>
+          <li>تحویل دیرهنگام: حداکثر ۴۸ ساعت با کسر ۱۰٪ در روز.</li>
+          <li>همکاری مجاز است؛ اما باید کار خودتان را تحویل دهید و منابع را ذکر کنید.</li>
+        </ul>
+      </section>
+    </div>
+
+    <section aria-labelledby="resources">
+      <h2 id="resources">منابع</h2>
+      <ul>
+        <li>کتاب: <em>زبان های رسمی و ماشین ها نوشته پیتر لینز</em></li>
+        <li>ساعات حضور: دوشنبه ها ۱۲ الی ۱۳</li>
+      </ul>
+    </section>
+
+
     <footer>
-        © 2025 پارسا باقرزاده
+      <p>© ۱۴۰۴  پارسا باقرزاده. آخرین بروزرسانی: ۱۸ مهر ۱۴۰۴.</p>
     </footer>
+  </div>
 </body>
 </html>
 
