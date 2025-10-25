@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ریاضیات گسسته</title>
+  <meta name="description" content="شرح درس، اهداف، برنامه، ارزیابی و اطلاعات مدرس." />
+  <style>
+    :root{
+      --bg:#fafafa; --panel:#ffffff; --text:#1f2937; --muted:#6b7280; --accent:#2563eb; --border:#e5e7eb;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; font-family:Tahoma, Vazirmatn, system-ui; color:var(--text); background:var(--bg); line-height:1.8}
+    .container{max-width:900px; margin:40px auto; padding:0 16px}
+    header{background:linear-gradient(180deg,#f5f7ff,transparent); padding:24px 0; text-align:right}
+    h1{margin:0 0 6px; font-size:clamp(1.6rem,2.5vw,2.2rem)}
+    .subtitle{color:var(--muted); margin:0 0 8px}
+    .meta{display:flex; gap:10px; flex-wrap:wrap; font-size:.95rem; color:var(--muted)}
+    .badge{display:inline-block; padding:2px 8px; border:1px solid var(--border); border-radius:999px; background:var(--panel)}
+    section{background:var(--panel); border:1px solid var(--border); border-radius:14px; padding:18px 16px; margin:16px 0; text-align:right}
+    section h2{margin:0 0 10px; font-size:1.15rem}
+    ul{margin:8px 0 0 18px}
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .grid{display:grid; gap:16px}
+    @media (min-width:800px){ .grid-2{grid-template-columns:1fr 1fr} }
+    footer{color:var(--muted); font-size:.9rem; padding:16px 0 40px; text-align:right}
+    .table{width:100%; border-collapse:collapse}
+    .table th,.table td{border:1px solid var(--border); padding:10px; text-align:right}
+    .table th{background:#f9fafb}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>ریاضیات گسسته</h1>
+      <p class="subtitle">نیم‌سال: پاییز ۱۴۰۴ · واحد: ۳ · مقطع: کارشناسی</p>
+      <div class="meta">
+        <span class="badge">مدرس: پارسا باقرزاده</span>
+        <span class="badge">ایمیل: parsa [dot] bagherazadeh [at] gmail [dot] com</span>
+      </div>
+    </header>
+
+    <section aria-labelledby="overview">
+      <h2 id="overview">معرفی</h2>
+      <p>
+        این درس مفاهیم بنیادی ریاضیات گسسته را برای دانشجویان علوم رایانه و مهندسی معرفی می‌کند. 
+        موضوعات شامل منطق گزاره‌ای و محمولی، نظریه مجموعه‌ها، روابط، توابع، استقرا، ترکیبیات، گراف‌ها و درخت‌ها است.
+        هدف درس، پرورش تفکر منطقی و توانایی استدلال ریاضی برای حل مسائل نظری و کاربردی در علوم رایانه است.
+      </p>
+      <p> برای مشاهده توضیحات کامل درس <a href="discrete_math.pdf">اینجا</a> را کلیک کنید </p>
+    </section>
+
+    <div class="grid grid-2">
+      <section aria-labelledby="outcomes">
+        <h2 id="outcomes">اهداف یادگیری</h2>
+        <ul>
+          <li>درک و استفاده از اصول منطق گزاره‌ای و استنتاج ریاضی.</li>
+          <li>به‌کارگیری نظریه مجموعه‌ها، روابط و توابع در مدل‌سازی مسائل.</li>
+          <li>استفاده از استقرا ریاضی برای اثبات گزاره‌ها.</li>
+          <li>تحلیل ساختارهای گسسته مانند گراف‌ها و درخت‌ها.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="prereqs">
+        <h2 id="prereqs">پیش‌نیازها</h2>
+        <ul>
+          <li>ریاضیات عمومی ۱</li>
+        </ul>
+      </section>
+    </div>
+
+    <section aria-labelledby="schedule">
+      <h2 id="schedule">برنامه هفتگی (موقت)</h2>
+      <table class="table" role="table">
+        <thead>
+          <tr><th>هفته</th><th>موضوع</th><th>منابع/یادداشت‌ها</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>۱</td><td>مقدمه و مرور منطق گزاره‌ای</td><td>-</td></tr>
+          <tr><td>۲</td><td>منطق محمولی و قوانین استنتاج</td><td>-</td></tr>
+          <tr><td>۳</td><td>نظریه مجموعه‌ها و عملگرهای مجموعه‌ای</td><td>-</td></tr>
+          <tr><td>۴</td><td>روابط و توابع</td><td>-</td></tr>
+          <tr><td>۵</td><td>استقرا ریاضی و اثبات‌ها</td><td>-</td></tr>
+          <tr><td>۶</td><td>اصول شمارش و ترکیبیات</td><td>-</td></tr>
+          <tr><td>۷</td><td>گراف‌ها و کاربردهای آن‌ها</td><td>-</td></tr>
+          <tr><td>۸</td><td>درخت‌ها و الگوریتم‌های پیمایش</td><td>-</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="assignments">
+      <h2 id="assignments">تمرین‌ها و تکالیف</h2>
+      <ul>
+      </ul>
+    </section>
+
+    <div class="grid grid-2">
+      <section aria-labelledby="assessment">
+        <h2 id="assessment">ارزیابی</h2>
+        <ul>
+          <li>تمرین‌ها : ۲۰٪</li>
+          <li>امتحان میان ترم (در تاریخ ۸ آذر ۱۴۰۴): ۳۵٪</li>
+          <li>امتحان پایانی: ۴۵٪</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="policies">
+        <h2 id="policies">قوانین</h2>
+        <ul>
+          <li>تحویل دیرهنگام: تا ۲ روز با کسر نمره (۱۰٪ در هر روز).</li>
+          <li>همکاری علمی مجاز است ولی هر دانشجو باید پاسخ خود را بنویسد.</li>
+        </ul>
+      </section>
+    </div>
+
+    <section aria-labelledby="resources">
+      <h2 id="resources">منابع</h2>
+      <ul>
+        <li>کتاب: <em>Discrete Mathematics and Its Applications, Kenneth H. Rosen</em></li>
+        <li>منبع مکمل: <em>ساختمان های گسسته بهروز قلی زاده انتشارات دانشگاه شریف
+  </em></li>
+        <li>ساعات حضور: دوشنبه‌ها ۱۲ الی ۱۳</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>© ۱۴۰۴  پارسا باقرزاده. آخرین بروزرسانی: ۳ آبان ۱۴۰۴.</p>
+    </footer>
+  </div>
+</body>
+</html>
+
